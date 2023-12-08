@@ -981,7 +981,7 @@ function getSubjectVerification(studentJson, teacherJson) {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
-  sendMsg("Server Is Up");
+  sendMsg("Starting");
   setWebhook();
   writeFile(myServerUrl, `myServerUrl`);
 });
