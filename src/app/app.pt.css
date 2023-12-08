@@ -1,0 +1,104 @@
+.nav-link {
+    font-size: large;
+  }
+
+  body {
+    background: linear-gradient(#343430, black);
+    height: max-content;
+    
+}
+h1 {
+    color: #ffff60;
+}
+p { 
+    color: white;
+} 
+img {
+    border: 1px solid;
+    border-color:#eeee60;
+    border-radius: 10px;
+}
+header {
+    
+    padding: 0.02px;
+    border-radius: 50px 0 50px 0;
+    background-color: #343430;
+    background: linear-gradient(-45deg, #444440, #141410);
+    color: #ffff60;
+    font-family: cursive;
+   
+    text-align: center;
+    width: 50%;
+    margin: 0 25% 10px 25%;
+}
+button {
+height: 30px;
+}
+
+/* .testdiv1 { 
+
+   padding: 3px;
+   border-radius: 5px;
+   background-color: pink;
+   margin: 10px;
+   width: 100px;
+   
+   
+} */
+.grid-family {
+    display: grid;
+    grid-template-areas: "r1c1 rallc2"
+                         "r2c1 rallc2"
+                         "r3c1 rallc2"
+                         "r4c1 rallc2"
+                ;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 15px;
+}
+
+            .r1c1 { display: flex;
+                grid-area: r1c1;
+                justify-content: center;
+                margin: 15px;
+}
+            .r2c1 {
+                display: flex;
+                grid-area: r2c1;
+                justify-content: center;
+            }
+
+            
+            .r3c1 {
+                display: flex;
+                grid-area: r3c1;
+                justify-content: center;
+            }
+
+            .r4c1 {   display: flex;
+                grid-area: r4c1;
+                margin: 50px;
+                justify-content: center;
+}
+
+            .rallc2 { display: flex;
+                grid-area: rallc2;
+                width: 100%;
+                justify-content: center;
+                margin: 15px;
+                
+}   
+            .subj { display: flex;
+
+                padding: 0.02px;
+                border-radius: 0 50px 0 50px ;
+                background-color: #343430;
+                background: linear-gradient(-45deg, #444440, #141410,#444440);
+                color: #ffff60;
+                font-family: cursive;
+                text-align: center;
+
+                margin: 10px 0 0 0;
+                color: #ffff60;
+                font-size: 25px;
+            }

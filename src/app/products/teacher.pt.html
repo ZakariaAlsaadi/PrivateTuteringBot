@@ -1,0 +1,54 @@
+    
+<div class='card'>
+    <div class="card-header alwan-mn-3ndi">
+        {{pageTitle}} 
+    </div>
+    <div class='card-body alwan-mn-3ndi-2'>
+        <div class='row alwan-mn-3ndi-2 '>
+            <div class='col-md-2 alwan-mn-3ndi-2 '>FIlter by:</div>
+            <div class='col-md-4 alwan-mn-3ndi-2 '>
+                <input type='text' 
+                        [(ngModel)]='lF'/>
+            </div>
+        </div>
+        <div class='col-md-6 alwan-mn-3ndi-2 '>
+            <h4>Filtered by: {{lF}}</h4>
+        </div>
+    </div>
+    <table class='table alwan-mn-3ndi-3 ' *ngIf='teacherList1.length'>
+        <thead>
+            <tr>
+                <th>
+                    <button class='btn btn-primary '
+                            (click)="toggleImage()">
+                            {{showImage ? 'Hide' : 'Show'}} Image
+                    </button>
+                </th>
+                <th>Teacher</th>
+                <th>number</th>
+                <th>place</th>
+                <th>Price per hour</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let teacher of fTeatcherList'>
+                <td>
+                    <img    *ngIf="showImage"
+                            [src]="teacher.teacherIMAGE"
+                            [title]="teacher.teacherNAME"
+                            [style.width.px]="iW"
+                            [style.margin.px]="iM">
+                </td>
+                <td>{{teacher.teacherNAME}}</td>
+                <td>{{teacher.teacherCOUNTRY | phone}}{{teacher.teacherNUMBER}}</td>
+                <td>{{teacher.teacherPLACE | uppercase | cTS : '-'}}</td>
+                <td>{{teacher.teacherPRICE | currency:'SP':'symbol':'1.0-0'}}</td>
+                <td>{{teacher.starRATING }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>

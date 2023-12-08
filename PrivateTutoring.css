@@ -1,0 +1,99 @@
+html {
+    background: linear-gradient(-45deg, cyan, pink);
+    height: 100%;
+}
+
+.menuButton {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 12px 0px 0px 10px;
+}
+
+.searchBox {
+    margin: 12px 0px 0px 12px;
+    height: 25px;
+    width: 450px;
+}
+
+.categoriesWindow {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(245, 245, 245);
+  margin: 65px 0px 0px 0px;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+}
+
+header {
+    margin: 5px 10px 10px 10px;
+    text-align: center;
+    padding: auto;
+    background-color: rgba(245, 245, 245);
+    border-radius: 5px;
+    height: 50px;
+}
+
+.teachersPage {
+    
+    display: grid; 
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    background-color: rgba(245, 245, 245, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.sonTeacher {
+    border: 2px solid rgb(110, 71, 77);
+    margin: 50px;
+    width: auto;
+    padding: 5px;
+    background-color: rgb(245, 245, 245); 
+    border-radius: 25px;
+    text-align: center;   
+}
+
+.teacherImg {
+    width: 174px;
+    height: 174px;
+    border-radius: 25px;
+}
+
+.phoneNumber {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.innerPhoneNumber {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.closingButton {
+    float: right;
+    margin: -10px 10px 0px 0px;
+}
+

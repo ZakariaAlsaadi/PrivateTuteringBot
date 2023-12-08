@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+ <title>private tutoring</title>
+ <link rel="stylesheet" href="/src/app/app.pt.css">
+</head>
+<body>
+<header>
+<h1>Hello and welcome</h1>
+<h3>to PRIVATE TUTORING home page</h3>
+</header>
+<div class="grid-family">
+
+
+                  <div class="r1c1">
+          <a href="/lindex.html">
+                  <img src="https://i.ibb.co/Xt0Thyy/Untitled26.jpg"
+                   width="50" height="50"
+                    style="border-radius:25px;margin-bottom:25px;margin-right:10px;">
+          </a>
+
+          <a href="/about.html">
+
+                  <img src="https://iili.io/H9XVuLu.jpg"
+                  alt="20221110-133104" style="border: 2px"
+                   height="100" width="220"
+                   border-color="#eeee60">
+           </a>
+
+                  </div>
+
+    <div class="r2c1">
+                <button class="btn btn-primary" 
+                    (click)="tss()"
+                 style="height:50px; width: 200px;">
+                  {{ss ? 'Hide': 'show'}} teachers list
+               </button>
+               
+    </div>
+    
+    <div class="r3c1">
+
+      <p class="subj"> Our subjects : Math , Phizix , English , Bio and Geo</p>
+
+    </div>
+      
+
+
+
+         <div *ngIf="ss" class="rallc2" >
+             <tm-teachers></tm-teachers>
+         </div>
+    
+
+    
+    <a href="https://t.me/Privatetutorin9" class="r4c1">
+    <img src="https://iili.io/H9XcBwb.jpg" height="50" width="140" style="margin-left:25px;"></a>
+  
+
+</div>
+<footer>
+
+<a href="/test.html"><h2>test</h2></a> 
+<a href="/regisringg.html">register</a>
+<a href="loggin.html">login</a>
+
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
