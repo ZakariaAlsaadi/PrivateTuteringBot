@@ -944,7 +944,9 @@ function postTeachers(message,userIndex,searchingBox) {
                     ) {
                       
                       sendMsg(
-                        `@${storageInfo[i].userName} ${teacherInfoSlot.phoneNumber} ${teacherInfoSlot.firstName} ${teacherInfoSlot.lastName} , ${teacherInfoSlot.priceList[0]} - ${teacherInfoSlot.priceList[1]} ليرة سورية`,
+                        `@${storageInfo[i].userName} ${teacherInfoSlot.firstName} ${teacherInfoSlot.lastName} ,
+                         هاتف : ${teacherInfoSlot.phoneNumber} ,
+                        المبلغ ${teacherInfoSlot.priceList[0]} - ${teacherInfoSlot.priceList[1]} ليرة سورية`,
                         message.from.id
                       );                 
                       storageInfo[userIndex].searchingStep = 0;
