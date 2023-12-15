@@ -5,3 +5,4 @@ it's a telegram bot that help students to search for the most suitable and neare
 How to use :
     npm install
     npm start
+    node index_telegram.js
