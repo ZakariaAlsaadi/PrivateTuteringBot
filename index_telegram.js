@@ -1,3 +1,4 @@
+const storagePath = `StorageOfAllPpl\\`; // `C:\\saketdesktop\\PrivateTutering.blog\\StorageOfAllPpl\\`;
 const express = require("express");
 const fs = require("fs");
 const bodyParser = require("body-parser");
@@ -6,12 +7,11 @@ const axios = require("axios");
 const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(express.static(`C:\\saketdesktop\\PrivateTutering.blog\\`));
+app.use(express.static(storagePath));
 const port = 4040;
 var token = [];
 token[0] = "5232088474:AAHHrA2KbFkHH5VhrOn68QR-rDwxdECLU3o";
 const apiUrl = `https://api.telegram.org/bot${token[0]}`;
-const storagePath = `StorageOfAllPpl\\`; // `C:\\saketdesktop\\PrivateTutering.blog\\StorageOfAllPpl\\`;
 
 const myServerUrl = `https://7500-188-247-16-198.ngrok-free.app/`;
 
