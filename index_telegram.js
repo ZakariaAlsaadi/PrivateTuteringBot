@@ -13,7 +13,7 @@ token[0] = "5232088474:AAHHrA2KbFkHH5VhrOn68QR-rDwxdECLU3o";
 const apiUrl = `https://api.telegram.org/bot${token[0]}`;
 const storagePath = `C:\\saketdesktop\\PrivateTutering.blog\\StorageOfAllPpl\\`;
 
-const myServerUrl = `https://64e8-185-169-163-162.ngrok-free.app/`;
+const myServerUrl = `https://e4a1-46-161-207-221.ngrok-free.app/`;
 
 const webHook = `${myServerUrl}webhook`;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
